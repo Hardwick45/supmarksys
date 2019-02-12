@@ -24,6 +24,14 @@
                         <template slot="title">
                             <i class="el-icon-tickets"></i>统计管理</template>
                         <el-menu-item index="salestatistics">销售统计</el-menu-item>
+                        <el-menu-item index="Incomingstatistics">进货统计</el-menu-item>
+                        
+                    </el-submenu>
+                     <el-submenu index="5">
+                        <template slot="title">
+                            <i class="el-icon-tickets"></i>会员管理</template>
+                        <el-menu-item index="vipnummanage">账号管理</el-menu-item>
+                        <el-menu-item index="vipnumadd">添加账号</el-menu-item>
                     </el-submenu>
                 </el-menu>
             </el-aside>

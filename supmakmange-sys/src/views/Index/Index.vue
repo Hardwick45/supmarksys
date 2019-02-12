@@ -5,13 +5,17 @@
             <Nav></Nav>
             <el-container>
                 <!--右侧头部-->
-                <el-header>Header</el-header>
+                <el-header>
+                    <Top></Top>
+                </el-header>
                 <!--右侧中间-->
                 <el-main>
                     <router-view />
                 </el-main>
                 <!--右侧底部-->
-                <el-footer>Footer</el-footer>
+                <el-footer>
+                    <Bottom></Bottom>
+                </el-footer>
             </el-container>
         </el-container>
     </div>
@@ -19,9 +23,13 @@
 
 <script>
 import Nav from '@/components/Nav/Nav.vue'
+import Top from '@/components/Top/Top.vue'
+import Bottom from '@/components/Bottom/Bottom.vue'
 export default {
     components:{
-        Nav
+        Nav,
+        Top,
+        Bottom
     }
 };
 </script>
@@ -37,14 +45,14 @@ export default {
      
     }
     .el-main {
-      background-color: #e9eef3;
+      background-color: #fff;
       color: #333;
       text-align: center;
     }
     .el-header,
     .el-footer {
-      background-color: #b3c0d1;
-      color: #333;
+      background-color: #fff;
+      color: #2d3a4b;
       text-align: center;
       line-height: 60px;
     }

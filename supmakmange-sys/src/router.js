@@ -51,6 +51,21 @@ export default new Router({
           name: '/goodsmanage',
           component: () => import('./views/Goodsmanage/Goodsmanage.vue')
         },
+        {
+          path: '/vipnumadd',
+          name: '/vipnumadd',
+          component: () => import('./views/Vipnumadd/Vipnumadd.vue')
+        },
+        {
+          path: '/vipnummanage',
+          name: '/vipnummanage',
+          component: () => import('./views/Vipnummanage/Vipnummanage.vue')
+        },
+        {
+          path: '/incomingstatistics',
+          name: '/incomingstatisticse',
+          component: () => import('./views/Incomingstatistics/Incomingstatistics.vue')
+        },
 
       ]
     },
