@@ -76,6 +76,31 @@ export default new Router({
           name: '/instockmanage',
           component: () => import('./views/Instockmanage/Instockmanage.vue')
         },
+        {
+          path: '/salelist',
+          name: '/salelist',
+          component: () => import('./views/Salelist/Salelist.vue')
+        },
+        {
+          path: '/commodityout',
+          name: '/commodityout',
+          component: () => import('./views/Commodityout/Commodityout.vue')
+        },
+        {
+          path: '/productreturn',
+          name: '/productreturn',
+          component: () => import('./views/Productreturn/Productreturn.vue')
+        },
+        {
+          path: '/classificationmanage',
+          name: '/classificationmanage',
+          component: () => import('./views/Classificationmanage/Classificationmanage.vue')
+        },
+        {
+          path: '/addcategory',
+          name: 'addcategory',
+          component: () => import('./views/Addcategory/Addcategory.vue')
+        },
 
       ]
     },

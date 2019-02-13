@@ -1,5 +1,5 @@
 <template>
-  <div class="vipnumadd">
+  <div class="vipnumadd"> 
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <span>会员管理</span>

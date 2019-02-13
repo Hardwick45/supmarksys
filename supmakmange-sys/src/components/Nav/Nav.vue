@@ -39,6 +39,19 @@
                 <el-menu-item index="instockmanage">库存管理</el-menu-item>
                 <el-menu-item index="instockadd">添加库存</el-menu-item>
             </el-submenu>
+            <el-submenu index="7">
+                <template slot="title">
+                    <i class="el-icon-sort"></i>出货货管理</template>
+                <el-menu-item index="salelist">销售列表</el-menu-item>
+                <el-menu-item index="commodityout">商品出库</el-menu-item>
+                <el-menu-item index="productreturn">商品退货</el-menu-item>
+            </el-submenu>
+             <el-submenu index="8">
+                <template slot="title">
+                    <i class="el-icon-rank"></i>分类管理</template>
+                <el-menu-item index="classificationmanage">分类管理</el-menu-item>
+                <el-menu-item index="addcategory">添加分类</el-menu-item>
+            </el-submenu>
         </el-menu>
     </el-aside>
 </template>
