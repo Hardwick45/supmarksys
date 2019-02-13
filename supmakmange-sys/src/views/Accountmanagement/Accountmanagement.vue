@@ -25,7 +25,7 @@
                 </el-table>
             </div>
         </el-card>
-    </div>
+    </div> 
 </template>
 <script>
 export default {

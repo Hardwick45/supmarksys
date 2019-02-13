@@ -62,7 +62,7 @@
                                 <el-option label="江苏" value="江苏"></el-option>
                                 <el-option label="山西" value="山西"></el-option>
                             </el-select>
-                            <el-select class="select2" v-model="vipnumAddForm.userGroup" placeholder="--请选择省份--">
+                            <el-select class="select2" v-model="vipnumAddForm.userGroup" placeholder="--请选择城市--">
                                 <el-option label="北京" value="北京"></el-option>
                                 <el-option label="上海" value="上海"></el-option>
                                 <el-option label="广东" value="广东"></el-option>
@@ -147,10 +147,10 @@ export default {
             .el-input {
               .el-input__inner {
                 width: 150px;
-                height: 30px;
+                height: 40px;
                 margin-left: -100px;
                 .el-radio-group {
-                  margin-left: 30px;
+                  margin-left: 35px;
                 }
               }
             }

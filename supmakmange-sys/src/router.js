@@ -66,6 +66,16 @@ export default new Router({
           name: '/incomingstatisticse',
           component: () => import('./views/Incomingstatistics/Incomingstatistics.vue')
         },
+        {
+          path: '/instockadd',
+          name: '/instockadd',
+          component: () => import('./views/Instockadd/Instockadd.vue')
+        },
+        {
+          path: '/instockmanage',
+          name: '/instockmanage',
+          component: () => import('./views/Instockmanage/Instockmanage.vue')
+        },
 
       ]
     },

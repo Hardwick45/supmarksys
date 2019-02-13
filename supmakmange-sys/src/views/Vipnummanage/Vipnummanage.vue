@@ -1,50 +1,48 @@
 <template>
-    <div class="vipnumadd">
-        <el-card class="box-card">
-            <div slot="header" class="clearfix">
-                <span>会员管理</span>
+  <div class="vipnumadd">
+    <el-card class="box-card">
+      <div slot="header" class="clearfix">
+        <span>会员管理</span>
 
-            </div>
-            <div class="text item">
-                搜索:
-                <el-input placeholder="请输入会员卡，会员名，电话手机" width="300px"></el-input>
-                <el-button type="success" size="mini">查询</el-button>
-                <el-table ref="multipleTable" :data="tableData" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">
-                    <el-table-column type="selection" width="55">
-                    </el-table-column>
-                    <el-table-column prop="vipcardnumber" label="会员卡卡号">
-                    </el-table-column>
-                    <el-table-column prop="vipname" label="会员姓名">
-                    </el-table-column>
+      </div>
+      <div class="text item">
+        搜索:
+        <el-input placeholder="请输入会员卡，会员名，电话手机" width="300px"></el-input>
+        <el-button type="success" size="mini">查询</el-button>
+        <el-table ref="multipleTable" :data="tableData" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">
+          <el-table-column type="selection" width="55">
+          </el-table-column>
+          <el-table-column prop="vipcardnumber" label="会员卡卡号">
+          </el-table-column>
+          <el-table-column prop="vipname" label="会员姓名">
+          </el-table-column>
 
-                    <el-table-column prop="vipgrade" label="会员等级">
-                    </el-table-column>
-                    <el-table-column prop="vipintegral" label="会员积分">
-                    </el-table-column>
-                    <el-table-column prop="discount" label="折扣">
-                    </el-table-column>
-                    <el-table-column prop="phonenumber" label="手机号">
-                    </el-table-column>
-                    <el-table-column prop="telnumber" label="座机号">
-                    </el-table-column>
-                    <el-table-column label="管理">
-                        <template slot-scope="scope">
-                            <el-button type="primary" size="mini" @click="handleEdit(scope.$index, scope.row)">
+          <el-table-column prop="vipgrade" label="会员等级">
+          </el-table-column>
+          <el-table-column prop="vipintegral" label="会员积分">
+          </el-table-column>
+          <el-table-column prop="discount" label="折扣">
+          </el-table-column>
+          <el-table-column prop="phonenumber" label="手机号">
+          </el-table-column>
+          <el-table-column prop="telnumber" label="座机号">
+          </el-table-column>
+          <el-table-column label="管理">
+            <template slot-scope="scope">
+              <el-button type="primary" size="mini" @click="handleEdit(scope.$index, scope.row)">
 
-                                <i class="el-icon-edit"></i>
-                            </el-button>
-                        </template>
-                    </el-table-column>
-                </el-table>
-                
-                   <el-pagination background layout="prev, pager, next" :total="1000">
-                </el-pagination>
-                
-                
+                <i class="el-icon-edit"></i>
+              </el-button>
+            </template>
+          </el-table-column>
+        </el-table>
 
-            </div>
-        </el-card>
-    </div>
+        <el-pagination background layout="prev, pager, next" :total="1000">
+        </el-pagination>
+
+      </div>
+    </el-card>
+  </div>
 </template>
 <script>
 export default {
@@ -126,9 +124,9 @@ export default {
     margin-top: 30px;
     border-top: 2px solid #ccc;
   }
-  .el-pagination{
+  .el-pagination {
     //   margin-left: 40px;
-      margin-top: 30px;
+    margin-top: 30px;
   }
 }
 </style>
