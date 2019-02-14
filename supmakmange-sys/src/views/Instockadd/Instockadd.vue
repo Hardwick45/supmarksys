@@ -2,7 +2,7 @@
     <div class="instockadd">
         <el-card class="box-card">
             <div slot="header" class="clearfix">
-                <span>商品入库</span>
+                <span>库存管理</span>
 
             </div>
             <div class="text item">
